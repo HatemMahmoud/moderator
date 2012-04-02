@@ -1,3 +1,3 @@
 # Google Moderator Example
 
-Trying Google Moderator
+Demo: http://hatem.github.com/moderator/
