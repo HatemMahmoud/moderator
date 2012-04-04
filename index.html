@@ -81,11 +81,11 @@
           MODERATOR_embed("https://www.google.com/moderator/#16/e=1fcf61", "moderator-embed-target");
         </script> -->
         
-        <script type="text/javascript"> 
-          var mod = new MODERATOR("http://www.google.com/moderator/#15/e=1fcf61&t=1fcf61.42"); 
-          mod.hl = "ar"; 
-          mod.width = 1000; 
-          mod.height = 700; 
+        <script type="text/javascript">
+          Moderator.prototype.ui = "COMPACT";
+          var mod = new MODERATOR("http://www.google.com/moderator/#16/e=1fcf61"); 
+          mod.hl = "ar";
+          mod.height = 700;          
           mod.embed("moderator-embed-target"); 
         </script>
       </div>
