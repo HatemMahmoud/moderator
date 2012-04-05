@@ -1,63 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <title>Moderator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><meta http-equiv="X-UA-Compatible" content="IE=8">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="gwt:property" content="locale=">
-<meta name="com.google.ccc.questiondb.QuestionDb::gwt:property" content="baseUrl=http://www.gstatic.com/moderator/static/ux/1202270832011/com.google.ccc.questiondb.QuestionDb/">
-<link rel="SHORTCUT ICON" href="/moderator/static/favicon.ico">
-<title>Google Moderator</title>
-<style type="text/css">
-        body {
-          background-color: transparent;
-          color: #333;
-          font-family: Helvetica, Arial;
-          font-size: 13px;
-          margin: 0;
-        }
-        img { border: 0; }
-        a { font-size: 100%; outline: none; }
-        
-        
-          #gbar,#guser{font-size:13px;padding-right:8px;padding-top:4px !important;}#gbar{padding-left:8px;float:left;height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}#gbs,.gbm{background:#fff;left:0;position:absolute;text-align:left;visibility:hidden;z-index:1000}.gbm{border:1px solid;border-color:#c9d7f1 #36c #36c #a2bae7;z-index:1001}.gb1{margin-right:.5em}.gb1,.gb3{zoom:1}.gb2{display:block;padding:.2em .5em}.gb2,.gb3{text-decoration:none !important;border-bottom:none}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb2,a.gb3,a.gb4{color:#00c !important}.gbi .gb3,.gbi .gb2,.gbi .gb4{color:#dd8e27 !important}.gbf .gb3,.gbf .gb2,.gbf .gb4{color:#900 !important}a.gb2:hover{background:#36c;color:#fff !important}#gbar .gbz0l{color:#000 !important;cursor:default;font-weight:bold;text-decoration:none !important}
-        
-      </style>
-<script type="text/javascript">
-(function(){try{var e=!0,j=!1;var aa=function(a,b,c,d){d=d||{};d._sn=["cfg",b,c].join(".");window.gbar.logger.ml(a,d)};var ba={A:1,C:2,U:3,u:4,N:5,H:6,j:7,e:8,Y:9,M:10,G:11,o:12,L:13,k:14,K:15,J:16,W:17,w:18,I:19,X:20,V:21,v:22,B:23,$:24,aa:25,Z:26,z:27,g:28,p:29,h:30,T:31,P:32,Q:33,D:34,F:35,S:36,R:37,O:38};var k=window.gbar=window.gbar||{},l=window.gbar.i=window.gbar.i||{},m={};function _tvn(a,b){var c=parseInt(a,10);return isNaN(c)?b:c}function _tvf(a,b){var c=parseFloat(a);return isNaN(c)?b:c}function _tvv(a){return!!a}function n(a,b,c){(c||k)[a]=b}k.bv={n:_tvn("2",0),r:"",f:".49.",m:_tvn("0",1)};var o=function(a){return function(){return k.bv.m==a}},ca=o(1),da=o(2);n("sb",ca);n("kn",da);l.a=_tvv;l.b=_tvf;l.c=_tvn;
-l.i=aa;var ea=window.gbar.i.i;var p,q,s,t,u;function fa(a){t=a}function ga(a){var b=t&&window.encodeURIComponent&&!a.href.match(/^http[s]?:\/\/accounts\.google\.[^/]*\/ClearSID/i)&&!a.href.match(/^http[s]?:\/\/[^/]*\/accounts\/ClearSID/i)&&encodeURIComponent(t());b&&(a.href=a.href.replace(/([?&]continue=)[^&]*/,"$1"+b))}function ha(a){var b=window.encodeURIComponent&&(document.forms[0].q||"").value;b&&(a.href=a.href.replace(/([?&])q=[^&]*|$/,function(a,d){return(d||"&")+"q="+encodeURIComponent(b)}))}p=ha;var ia=fa,ja=ga;
-function v(a,b,c,d,h,f){var g=document.getElementById(a);if(g){var i=g.style;i.left=d?"auto":b+"px";i.right=d?b+"px":"auto";i.top=c+"px";i.visibility=s?"hidden":"visible";h&&f?(i.width=h+"px",i.height=f+"px"):(v(q,b,c,d,g.offsetWidth,g.offsetHeight),s=s?"":a)}}
-function ka(a,b,c){var d="on"+b;if(a.addEventListener)a.addEventListener(b,c,j);else if(a.attachEvent)a.attachEvent(d,c);else{var h=a[d];a[d]=function(){var a=h.apply(this,arguments),b=c.apply(this,arguments);return void 0==a?b:void 0==b?a:b&&a}}}
-var w=[],la=function(a,b){w.push(b)},ma=function(a){var a=a||window.event,b=a.target||a.srcElement;a.cancelBubble=e;null==q&&(a=document.createElement(Array.every||window.createPopup?"iframe":"div"),a.frameBorder="0",q=a.id="gbs",a.src="javascript:''",b.parentNode.appendChild(a),ka(document,"click",x));var c=b,b=0;"gb3"!=c.className&&(c=c.parentNode);var a=c.getAttribute("aria-owns")||"gbi",d=c.offsetWidth,h=20<c.offsetTop?46:24;document.getElementById("tphdr")&&(h-=3);var f=j;do b+=c.offsetLeft||
-0;while(c=c.offsetParent);var c=(document.documentElement.clientWidth||document.body.clientWidth)-b-d,g,d=document.body,i=document.defaultView;i&&i.getComputedStyle?(d=i.getComputedStyle(d,""))&&(g=d.direction):g=d.currentStyle?d.currentStyle.direction:d.style.direction;g="rtl"==g;if("gbi"==a){for(d=0;i=w[d++];)i();y(null,window.navExtra);g&&(b=c,f=e)}else g||(b=c,f=e);s!=a&&x();v(a,b,h,f)},x=function(){s&&v(s,0,0)},y=function(a,b){var c,d=document.getElementById("gbi"),h=a;h||(h=d.firstChild);for(;b&&
-(c=b.pop());){var f=d,g=c,i=h;u||(u="gb2");f.insertBefore(g,i).className=u}},na=function(a,b,c){if((b=document.getElementById(b))&&a){a.className="gb4";var d=document.createElement("span");d.appendChild(a);d.appendChild(document.createTextNode(" | "));d.id=c;b.appendChild(d)}},oa=function(){return document.getElementById("gb_70")};n("qs",p);n("setContinueCb",ia);n("pc",ja);n("tg",ma);n("close",x);n("addLink",na);n("almm",y);n("si",oa);n("adh",la);var z=function(){},A=function(){},D=function(a){var b=new Image,c=B;b.onerror=b.onload=b.onabort=function(){try{delete C[c]}catch(a){}};C[c]=b;b.src=a;B=c+1},C=[],B=0;n("logger",{il:A,ml:z});var E=window.gbar.logger;var F={},pa={},G=[],qa=function(a,b){G.push([a,b])},ra=function(a,b){F[a]=b},sa=function(a){return a in F},H={},I=function(a,b){H[a]||(H[a]=[]);H[a].push(b)},ta=function(a){I("m",a)},J=function(a){var b=document.createElement("script");b.src=a;(document.getElementById("xjsc")||document.body).appendChild(b)},L=function(a){for(var b=0,c;(c=G[b])&&!(c[0]==a);++b);c&&!c[1].l&&!c[1].s&&(c[1].s=e,K(2,a),c[1].url&&J(c[1].url),c[1].libs&&m.d&&m.d(c[1].libs))},M=function(a){I("gc",a)},N=null,ua=function(a){N=
-a},K=function(a,b,c){if(N){a={t:a,b:b};if(c)for(var d in c)a[d]=c[d];try{N(a)}catch(h){}}};n("mdc",F);n("mdi",pa);n("bnc",G);n("qGC",M);n("qm",ta);n("qd",H);n("lb",L);n("mcf",ra);n("bcf",qa);n("aq",I);n("mdd","");n("has",sa);n("trh",ua);n("tev",K);var O=l.b("0.0001",1.0E-4),P=0;
-function _mlToken(a,b){try{if(1>P){P++;var c,d=a,h=b||{},f=encodeURIComponent,g=["//www.google.com/gen_204?atyp=i&zx=",(new Date).getTime(),"&jexpid=",f("17483"),"&srcpg=",f("prop=131"),"&jsr=",Math.round(1/O),"&ogf=",k.bv.f,"&ogv=",f("1332973958.0"),"&ogd=",f("com"),"&ogl=",f("en")];h._sn&&(h._sn="og."+h._sn);for(var i in h)g.push("&"),g.push(f(i)),g.push("="),g.push(f(h[i]));g.push("&emsg=");g.push(f(d.name+":"+d.message));var r=g.join("");Q(r)&&
-(r=r.substr(0,2E3));c=r;var wa=window.gbar.logger._aem(a,c);D(wa)}}catch(Ga){}}var Q=function(a){return 2E3<=a.length},va=function(a,b){return b};function R(a){z=a;n("_itl",Q,E);n("_aem",va,E);n("ml",z,E);a={};F.er=a}l.a("")?R(function(a){throw a;}):l.a("1")&&Math.random()<O&&R(_mlToken);G.push(["m",{url:"//ssl.gstatic.com/gb/js/scm_7dd38b52187713cf7e13ccf48b8feba1.js"}]);k.mcf("c",{});if(l.a("1")){var xa=l.a("");G.push(["gc",{auto:xa,url:"//ssl.gstatic.com/gb/js/abc/gci_78c17c085d1740ee894d9fec9ece5033.js",libs:"googleapis.client:plusone"}]);var ya={version:"gcm_f33b375e36e8c1fa70957777bf47af4a.js",index:"0",lang:"en"};F.gc=ya;var S=function(a){window.googleapis&&window.iframes?a&&a():(a&&M(a),L("gc"))};n("lGC",S);l.a("1")&&n("lPWF",S)};window.__PVT="APfa0brwcbVJN8Sii-ZGxyh0IeYImMQYUllhIWtffr2q1kDGZhuopAViM40u9Q9Or_2zYf_odaPhIp4OrQ_N0ld-CyrNrI0U1Q==";if(l.a("1")&&l.a("1")){var T=function(a){S(function(){I("pw",a);L("pw")})};n("lPW",T);G.push(["pw",{url:"//ssl.gstatic.com/gb/js/abc/pwm_9f2309242efa34f253d8a3f7d8abb48c.js"}]);var U=[],za=function(a){U[0]=a},Aa=function(a,b){var c=b||{};c._sn="pw";z(a,c)},Ba={signed:U,elog:Aa,base:"https://plusone.google.com/u/0",loadTime:(new Date).getTime()};F.pw=Ba;var V=function(a,b){for(var c=b.split("."),d=function(){var b=arguments;a(function(){for(var a=k,d=0,f=c.length-1;d<f;++d)a=a[c[d]];a[c[d]].apply(a,b)})},h=k,f=0,g=c.length-
-1;f<g;++f)h=h[c[f]]=h[c[f]]||{};return h[c[f]]=d};V(T,"pw.clk");V(T,"pw.hvr");n("su",za,k.pw)};function Ca(){function a(){for(var b;(b=f[g++])&&!("m"==b[0]||b[1].auto););b&&(K(2,b[0]),b[1].url&&J(b[1].url),b[1].libs&&m.d&&m.d(b[1].libs));g<f.length&&setTimeout(a,0)}function b(){0<h--?setTimeout(b,0):a()}var c=l.a("1"),d=l.a(""),h=3,f=G,g=0,i=window.gbarOnReady;if(i)try{i()}catch(r){ea(r,"ml","or")}d?n("ldb",a):c?window.addEventListener?window.addEventListener("load",b,j):window.attachEvent("onload",b):b()}n("rdl",Ca);var W=l.b("0",1.0E-4),X=l.b("1.0",1),Y=j,Z=j;if(l.a("")){var Da=Math.random();Da<=W&&(Y=e);Da<=X&&(Z=e)}var $=ba;
-function Ea(a,b){var c=W,d=Y,h;h=34>=a?a<=$.k?a==$.j||a==$.e||a==$.o?j:e:a>=$.g&&a<=$.h?e:j:200<=a?e:j;h&&(c=X,d=Z);if(d){d=encodeURIComponent;c=["//www.google.com/gen_204?atyp=i&zx=",(new Date).getTime(),"&oge=",a,"&ogex=",d("17483"),"&ogf=",k.bv.f,"&ogp=",d("131"),"&ogsr=",Math.round(1/c),"&ogv=",d("1332973958.0"),"&ogd=",d("com"),"&ogl=",d("en")];if(b){"ogw"in b&&(c.push("&ogw="+b.ogw),delete b.ogw);var f;h=b;var g=[];for(f in h)0!=g.length&&g.push(","),
-g.push(f),g.push("."),g.push(h[f]);f=g.join("");""!=f&&(c.push("&ogad="),c.push(d(f)))}D(c.join(""))}}A=Ea;n("il",A,E);var Fa={};F.il=Fa;setTimeout(function(){A($.e)},0);}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
-(function(){try{var a=window.gbar;a.mcf("pm",{p:""});}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
-(function(){try{window.gbar.rdl();}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+    <!-- Le styles -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
 
-</script>
-<script type="text/javascript" src="//www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
-<script language="javascript" type="text/javascript">
-var UiFlags=[,,,,,0,1,"6LdBQskSAAAAAP_nzfcZ3BbSXZKBqp1rHcXiZdI2"];</script>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<script language="javascript" type="text/javascript" src="http://www.gstatic.com/moderator/static/ux/1202270832011/com.google.ccc.questiondb.QuestionDb/com.google.ccc.questiondb.QuestionDb.cache.js">
-        
-      </script></head>
-<body><div id="gcontainer" style="display:none"><div id=gbar><nobr><a class=gb1 id=gb_23 href="https://mail.google.com/mail/?authuser=0">Gmail</a> <a class=gb1 id=gb_24 href="https://www.google.com/calendar?authuser=0">Calendar</a> <a class=gb1 id=gb_25 href="https://docs.google.com/?authuser=0">Documents</a> <a class=gb1 id=gb_31 href="http://picasaweb.google.com/home?hl=en">Photos</a> <a class=gb1 id=gb_38 href="https://sites.google.com/?authuser=0">Sites</a> <a class=gb1 id=gb_3 href="http://groups.google.com/grphp?hl=en&authuser=0">Groups</a> <a id=gb_1 href="http://www.google.com/webhp?hl=en&authuser=0" class=gb1>Search</a> <a class=gb3 href="http://www.google.com/intl/en/options/" onclick="this.blur();gbar.tg(event);return !1" aria-haspopup=true><u>More</u> <small>&#9660;</small></a><div class=gbm id=gbi><a class=gb2 id=gb_32 href="http://www.google.com/reader/?hl=en&authuser=0">Reader</a><a class=gb2 id=gb_36 href="http://www.youtube.com/?authuser=0">YouTube</a><div class=gb2><div class=gbd></div></div><a class=gb2 id=gb_2 href="http://www.google.com/imghp?hl=en&authuser=0">Images</a><a class=gb2 id=gb_12 href="http://video.google.com/?hl=en&authuser=0">Videos</a><a class=gb2 id=gb_8 href="http://maps.google.com/maps?hl=en&authuser=0">Maps</a><a class=gb2 id=gb_5 href="http://news.google.com/nwshp?hl=en&authuser=0">News</a><a class=gb2 id=gb_6 href="http://www.google.com/shopping?hl=en&authuser=0">Shopping</a><a class=gb2 id=gb_51 href="http://translate.google.com/?hl=en">Translate</a><a class=gb2 id=gb_10 href="http://books.google.com/bkshp?hl=en&authuser=0">Books</a><a class=gb2 id=gb_9 href="http://scholar.google.com/schhp?hl=en">Scholar</a><a class=gb2 id=gb_27 href="http://www.google.com/finance?authuser=0">Finance</a><a class=gb2 id=gb_13 href="http://www.google.com/blogsearch?hl=en&authuser=0">Blogs</a><div class=gb2><div class=gbd></div></div><a href="http://www.google.com/intl/en/options/" class=gb2>Even more &raquo;</a></div></nobr></div><div id=guser width=100%><nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><b><a onclick="this.blur();gbar.tg(event);return !1" aria-haspopup=true aria-owns=gb2 class=gb3><u>hatem.mb@gmail.com</u> <small>&#9660;</small></a></b> | <span id=gbe></span><a onclick="this.blur();gbar.tg(event);return !1" aria-haspopup=true aria-owns=gbg class=gb3><u>Settings</u> <small>&#9660;</small></a> | <a  href="http://sites.google.com/site/moderatorhelpcenter/" class=gb4>Help</a> | <a id=gb_71 href="https://www.google.com/accounts/Logout?service=moderator" class=gb4>Sign out</a><div class=gbm id=gbg><a id=gb_156 href="https://www.google.com/accounts/b/0/ManageAccount" class=gb2>Google Account settings</a> </div><div class=gbm id=gb2><div class=gb2><b>hatem.mb@gmail.com (default)</b></div><a href="/moderator/?authuser=1" class=gb2>hatem.mahmoud@espace.com.eg</a><a href="/moderator/?authuser=2" class=gb2>hatem@expressionlab.com</a><div class=gb2><div class=gbd></div></div><a target=_blank href="https://www.google.com/accounts/AddSession?service=moderator" class=gb2>Sign in to another account&hellip;</a></div></nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div></div>
-<iframe src="javascript:&#39;&#39;" id="__gwt_historyFrame" style="position:absolute;width:0;height:0;border:0;clear:both"></iframe>
-<noscript><p><b>Google Moderator</b> is a tool that allows distributed communities to submit and vote on questions for talks, presentations and events.</p>
-<p>You must have JavaScript enabled in order to use this feature.</p></noscript>
-<script language="javascript" type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+    <script src="https://www.google.com/moderator/static/moderator-embed-api.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Moderator</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="#">Link</a></li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+      </div>
+
+      <div id="moderator-embed-target" style="text-align: center;"></div>
+      <!-- <script type="text/javascript">
+        MODERATOR_embed("https://www.google.com/moderator/#16/e=1fcf61", "moderator-embed-target");
+      </script> -->
+      <script type="text/javascript">
+        var mod = new MODERATOR("http://www.google.com/moderator/#16/e=1fcf61"); 
+        mod.hl = "ar";
+        mod.width = 1170;
+        mod.height = 700;
+        mod.ui = "COMPACT";
+        mod.embed("moderator-embed-target"); 
       </script>
-<script type="text/javascript">
-        try {
-          var pageTracker = _gat._getTracker("UA-5745388-2");
-          pageTracker._setCookiePath("/moderator/");
-          pageTracker._trackPageview();
-        } catch(err) {}
-      </script></body></html>
+      
+      <hr>
+      <footer>
+        <p>&copy; Moderator 2012</p>
+      </footer>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/bootstrap-transition.js"></script>
+    <script src="javascripts/bootstrap-alert.js"></script>
+    <script src="javascripts/bootstrap-modal.js"></script>
+    <script src="javascripts/bootstrap-dropdown.js"></script>
+    <script src="javascripts/bootstrap-scrollspy.js"></script>
+    <script src="javascripts/bootstrap-tab.js"></script>
+    <script src="javascripts/bootstrap-tooltip.js"></script>
+    <script src="javascripts/bootstrap-popover.js"></script>
+    <script src="javascripts/bootstrap-button.js"></script>
+    <script src="javascripts/bootstrap-collapse.js"></script>
+    <script src="javascripts/bootstrap-carousel.js"></script>
+    <script src="javascripts/bootstrap-typeahead.js"></script>
+  </body>
+</html>
