@@ -84,9 +84,11 @@
         mod.ui = "COMPACT";
         mod.embed("moderator-embed-target");
         $(function() {
+          alert($('iframe').first().height());
           $('iframe').first().attr("style", "position:relative; left:-253px;");
         });
         $('iframe').first().load(function() {
+          alert($('iframe').first().height());
           this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
         });
       </script>
