@@ -15,7 +15,7 @@
         padding-bottom: 40px;
       }
     </style>
-    <link href="stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- <link href="stylesheets/bootstrap-responsive.min.css" rel="stylesheet"> -->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -72,7 +72,7 @@
         <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
       </div>
-      <div id="moderator-embed-target" style="position: absolute;   clip: rect(106px,940px,693px,0px);border: 1px solid;top: 260px;"></div>
+      <div id="moderator-embed-target" style="position: absolute; top: 260px; clip: rect(106px,940px,693px,0px);"></div>
       <!-- <script type="text/javascript">
         MODERATOR_embed("https://www.google.com/moderator/#16/e=1fcf61", "moderator-embed-target");
       </script> -->
@@ -82,7 +82,8 @@
         mod.width = 1213;
         mod.height = 700;
         mod.ui = "COMPACT";
-        mod.embed("moderator-embed-target"); 
+        mod.embed("moderator-embed-target");
+        $('iframe').first().attr("style", "position:relative; left:-253px;");
       </script>
     </div> <!-- /container -->
 
