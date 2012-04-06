@@ -73,25 +73,6 @@
         <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
       </div>
       <div id="moderator-embed-target" style="position: absolute; top: 260px; clip: rect(106px,940px,693px,0px);"></div>
-      <!-- <script type="text/javascript">
-        MODERATOR_embed("https://www.google.com/moderator/#16/e=1fcf61", "moderator-embed-target");
-      </script> -->
-      <script type="text/javascript">
-        var mod = new MODERATOR("http://www.google.com/moderator/#15/e=1fcf61&t=1fcf61.42&f=1fcf61.6633e8"); 
-        mod.hl = "ar";
-        mod.width = 1213;
-        mod.height = 700;
-        mod.ui = "COMPACT";
-        mod.embed("moderator-embed-target");
-        $(function() {
-          alert($('iframe').first().height());
-          $('iframe').first().attr("style", "position:relative; left:-253px;");
-        });
-        $('iframe').first().load(function() {
-          alert($('iframe').first().height());
-          this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
-        });
-      </script>
     </div> <!-- /container -->
 
     <!-- Le javascript
@@ -110,5 +91,25 @@
     <script src="javascripts/bootstrap-collapse.js"></script>
     <script src="javascripts/bootstrap-carousel.js"></script>
     <script src="javascripts/bootstrap-typeahead.js"></script>
+    
+    <!-- <script type="text/javascript">
+      MODERATOR_embed("https://www.google.com/moderator/#16/e=1fcf61", "moderator-embed-target");
+    </script> -->
+    <script type="text/javascript">
+      var mod = new MODERATOR("http://www.google.com/moderator/#15/e=1fcf61&t=1fcf61.42&f=1fcf61.6633e8"); 
+      mod.hl = "ar";
+      mod.width = 1213;
+      mod.height = 700;
+      mod.ui = "COMPACT";
+      mod.embed("moderator-embed-target");
+      $(function() {
+        alert($('iframe').first().height());
+        $('iframe').first().attr("style", "position:relative; left:-253px;");
+      });
+      $('iframe').first().load(function() {
+        alert($('iframe').first().height());
+        this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+      });
+    </script>
   </body>
 </html>
