@@ -102,7 +102,7 @@
       mod.height = 700;
       mod.ui = "COMPACT";
       mod.embed("moderator-embed-target");
-      $(function() {
+      $(document).ready(function() {
         alert($('iframe').first().height());
         $('iframe').first().attr("style", "position:relative; left:-253px;");
       });
