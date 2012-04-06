@@ -83,10 +83,12 @@
         mod.height = 700;
         mod.ui = "COMPACT";
         mod.embed("moderator-embed-target");
-        $('iframe').first().attr("style", "position:relative; left:-253px;");
+        // $('iframe').first().attr("style", "position:relative; left:-253px;");
         $('iframe').first().load(function() {
+          alert(this.style.height);
           this.attr("style", "position:relative; left:-253px;");
-          // this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+          this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+          alert(this.style.height);
         });
       </script>
     </div> <!-- /container -->
